@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import './assets/css/styles.css'
+import './assets/css/base.scss'
 
 Vue.config.productionTip = false
 
