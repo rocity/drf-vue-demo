@@ -9,7 +9,7 @@ class List(models.Model):
 
 
 class Item(models.Model):
-    parent = models.ForeignKey(List)
+    parent = models.ForeignKey(List, related_name='items')
     content = models.CharField(max_length=255)
 
     def __str__(self):

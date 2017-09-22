@@ -31,6 +31,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='item',
             name='parent',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='list.List'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='list_app.List'),
         ),
     ]
