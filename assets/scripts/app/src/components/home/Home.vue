@@ -5,7 +5,8 @@
     <div v-for='list in lists' class="card">
       <div class="content" v-if='list'>
         <p class="title"><strong>{{ list.title }}</strong></p>
-        <p>Items</p>
+        <hr>
+        <router-link :to="{name: 'ListDetail', params: {list_id: list.id}}">Details</router-link>
       </div>
     </div>
   </div>
